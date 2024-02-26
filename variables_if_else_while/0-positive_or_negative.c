@@ -3,16 +3,16 @@
 #include <time.h>
 
 /**
- * main - Entry point
+ * main - Entry point of the program
  *
- * Return: Always 0 (Success)
+ * Return: Always 0 (indicating success)
  */
 int main(void)
 {
     int n;
 
-    srand(time(NULL));
-    n = rand() - RAND_MAX / 2;
+    srand(time(NULL)); /* Seed the random number generator */
+    n = rand() - RAND_MAX / 2; /* Generate a random number between -RAND_MAX/2 and RAND_MAX/2 */
     
     printf("%d ", n);
 
