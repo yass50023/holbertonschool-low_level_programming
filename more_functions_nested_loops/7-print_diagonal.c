@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * print_diagonal - printing lines diagonal
- * @n: number of times
- * Return: void
+ *print_diagonal - draws a diagonal line.
+ *@n: number of time.
+ *Return: void.
  */
 void print_diagonal(int n)
 
@@ -21,5 +21,5 @@ void print_diagonal(int n)
 		_putchar('\\');
 		_putchar('\n');
 	}
-	
+
 }
