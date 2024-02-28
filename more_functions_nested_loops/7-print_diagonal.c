@@ -2,7 +2,7 @@
 
 /**
  * print_diagonal - printing lines diagonal
- * @n: input variable
+ * @n: number of times
  * Return: void
  */
 void print_diagonal(int n)
@@ -21,5 +21,5 @@ void print_diagonal(int n)
 		_putchar('\\');
 		_putchar('\n');
 	}
-
+	
 }
