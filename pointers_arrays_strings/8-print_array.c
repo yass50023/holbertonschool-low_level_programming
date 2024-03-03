@@ -1,39 +1,20 @@
-#include "main.h"
-#include <unistd.h> // for write function
-
+#include <stdio.h>
 /**
- * _putchar - writes a character to stdout
- * @c: The character to print
- *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
+ *print_array - prints elements of an array of integers.
+ *@n: the number of elements of the array to be printed.
+ *@a: the input
  */
-int _putchar(char c)
+void print_array(int *a, int n)
 {
-    return write(1, &c, 1);
-}
+	int i;
 
-/**
- * puts_half - prints half of a string.
- * @str: the string.
- */
-void puts_half(char *str)
-{
-    int i, n;
-
-    i = 0;
-    while (str[i] != '\0')
-        i++;
-
-    n = i / 2;
-
-    if (i % 2 == 1)
-        n++;
-
-    while (n < i)
-    {
-        _putchar(str[n]);
-        n++;
-    }
-    _putchar('\n');
+	for (i = 0; i < n; i++)
+	{
+		printf("%d", a[i]);
+		if (i != (n - 1))
+		{
+			printf(", ");
+		}
+	}
+	putchar('\n');
 }
