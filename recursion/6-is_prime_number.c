@@ -19,3 +19,4 @@ int checker(int n, int base)
 		return (checker(n + 1, base));
 	return (1);
 }
+
