@@ -1,5 +1,5 @@
 
-Here's the _strchr function with Betty style documentation:
+Here's the corrected _strchr function with adherence to the provided requirements, including a fix for the compilation error:
 
 c
 Copy code
@@ -17,6 +17,9 @@ Copy code
 char *_strchr(char *s, char c)
 {
 	char *ptr = s;
+
+	if (s == NULL)
+		return NULL;
 
 	while (*ptr != '\0')
 	{
